@@ -43,7 +43,8 @@ li{
 #navigation__bar{
     width: 100vw;
     height: 100vh;
-    background-image: url(assets/test2.jpg);
+    /* background-image: url(assets/test2.jpg); */
+    background-image: linear-gradient(orange, blue);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -174,7 +175,7 @@ li{
     flex-direction: column;
     background-image: url(assets/test6.jpg);
     background-size: cover;
-    padding: 80px 0px;
+    padding: 96px 0px;
 }
 
 .stack__title{
@@ -211,7 +212,7 @@ li{
 }
 
 .stack__list{
-    width: 50%;
+    width: 33.3%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -234,6 +235,7 @@ li{
     font-size: 20px;
     transform: scale(0);
     transition: all 500ms ease;
+    padding-top: 12PX;
 }
 
 .stack__list:hover .stack__description{
@@ -244,4 +246,28 @@ li{
     transform: scale(1.1);
     filter: brightness(110%);
     
+}
+
+/* CSS For Projects */
+
+#Projects{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(white, wheat);
+    background-size: cover;
+    padding: 80px 0px;
+}
+
+.project__header,
+.project__subheader{
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
+.project__subheader{
+    font-size: 32px;
+}
+.project__header{
+    font-size: 56px;
 }
