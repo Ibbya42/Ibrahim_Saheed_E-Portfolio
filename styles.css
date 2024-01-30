@@ -162,17 +162,33 @@ li{
     font-size: 24px;
 }
 
+.scroll_icon:hover{
+    color: red;
+    transition: all 1000ms ease;
+}
+
 /* CSS For Tech Stack */
 
 #technology__Stack{
     display: flex;
     flex-direction: column;
+    background-image: url(assets/test6.jpg);
+    background-size: cover;
     padding: 72px 0px;
 }
 
 .stack__title{
     font-size: 56px;
-    color: black;
+    color: white;
     text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Stack__subheading{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 8px;
 }
 
