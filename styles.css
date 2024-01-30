@@ -33,6 +33,7 @@ li{
     font-size: 56px;
     color: white;
     text-align: center;
+    animation: landing__rightsection-text 2000ms ease;;
     /* text-transform: uppercase; */
 }
 
@@ -94,6 +95,7 @@ li{
 .landing__pagepicture--ibby{
     width: 300px;
     border-radius: 10%;
+    animation: landing__imgmover 4000ms ease;
 }
 
 .landingpage__wrapper{
@@ -120,6 +122,8 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
   
 }
 
@@ -128,6 +132,7 @@ li{
     text-align: center;
     color: white;
     padding-top: 24px;
+    animation: landing__rightsection-text 4000ms ease;
 }
 
 .landing__subheading{
@@ -135,6 +140,7 @@ li{
     text-align: center;
     padding-top: 12px;
     color: white;
+    animation: landing__rightsection-text 4000ms ease;
 }
 
 .social__link--list{
@@ -166,6 +172,21 @@ li{
 .scroll_icon:hover{
     color: red;
     transition: all 1000ms ease;
+}
+
+@keyframes landing__rightsection-text {
+    0% {color: black;}
+    100% {color: white;}
+}
+
+@keyframes landing__imgmover{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 /* CSS For Tech Stack */
