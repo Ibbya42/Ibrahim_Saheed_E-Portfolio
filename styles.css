@@ -33,7 +33,7 @@ li{
     font-size: 56px;
     color: white;
     text-align: center;
-    animation: landing__rightsection-text 2000ms ease;;
+    animation: landing__rightsection-text 2000ms ease;
     /* text-transform: uppercase; */
 }
 
@@ -70,6 +70,7 @@ li{
 
 .navigation__link--list{
     margin: 0 18px;
+    animation: fading-in 4000ms ease;
 }
 
 .nav__link--edit{
@@ -77,17 +78,47 @@ li{
     font-size: 24px;
     font-weight: 400;
     
+    
 }
 
 .navlink__hover--effect:hover{
-    color: #c8d8e3
+    color: red;
+    transition: all 400ms ease-out;
 }
 
 .Nav__logo--heading{
     font-size: 44px;
     font-weight: 700;
     color: white;
+    animation: fading-in-navtitle 4000ms ease;
 }
+
+@keyframes fading-in{
+
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fading-in-navtitle{
+
+    0%{
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 
 /* CSS FOR Landing Page */
