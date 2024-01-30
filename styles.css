@@ -44,7 +44,7 @@ li{
     width: 100vw;
     height: 100vh;
     /* background-image: url(assets/test2.jpg); */
-    background-image: linear-gradient(orange, blue);
+    background-image: url(assets/test6.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -253,14 +253,14 @@ li{
 #Projects{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(white, wheat);
+    background-image: url(assets/test6.jpg);
     background-size: cover;
     padding: 80px 0px;
 }
 
 .project__header,
 .project__subheader{
-    color: black;
+    color: white;
     text-align: center;
     font-weight: 700;
 }
