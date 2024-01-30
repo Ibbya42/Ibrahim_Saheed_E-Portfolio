@@ -1,11 +1,16 @@
 /* Import Text font Url  */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
 
 /* Default CSS settings */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+HTML{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .row{
@@ -24,12 +29,26 @@ li{
     list-style-type: none;
 }
 
+.title{
+    font-size: 56px;
+    color: white;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+
 
 /* CSS FOR Navigation Bar */
 
 #navigation__bar{
     width: 100vw;
-    background-color: #034c7e
+    height: 100vh;
+    background-image: url(assets/test2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+    
     
 }
 
@@ -44,17 +63,116 @@ li{
 
 .navigation__links{
     display: flex;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-.navigation__link--list{
-    padding: 0 18px;
     
 }
 
-.navigation__img{
-    width: 150px;
+.navigation__link--list{
+    margin: 0 18px;
+}
+
+.nav__link--edit{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+
+.navlink__hover--effect:hover{
+    color: #c8d8e3
+}
+
+.Nav__logo--heading{
+    font-size: 44px;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* CSS FOR Landing Page */
+
+.landing__pagepicture--ibby{
+    width: 300px;
+    border-radius: 10%;
+}
+
+.landingpage__wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 128px 0;
+  
+    
+}
+
+.landing__leftsection{
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.landing__rightsection{
+    float: right;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.landing__para{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding-top: 24px;
+}
+
+.landing__subheading{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+}
+
+.social__link--list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links__icon{
+    padding: 40px 24px;
+    font-size: 24px;
+}
+
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll_icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+/* CSS For Tech Stack */
+
+#technology__Stack{
+    display: flex;
+    flex-direction: column;
+    padding: 72px 0px;
+}
+
+.stack__title{
+    font-size: 56px;
+    color: black;
+    text-align: center;
 }
 
