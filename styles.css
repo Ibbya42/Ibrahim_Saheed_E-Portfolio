@@ -323,3 +323,26 @@ li{
 .project__header{
     font-size: 56px;
 }
+
+.project__img{
+    width: 100%;
+   
+    padding: 24px;
+  
+}
+
+.project__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project__description{
+    position: absolute;
+    color: black;
+    max-width: 100%;
+    
+}
