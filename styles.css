@@ -326,8 +326,7 @@ li{
 
 .project__img{
     width: 100%;
-   
-    padding: 24px;
+    
   
 }
 
@@ -338,11 +337,23 @@ li{
     align-items: center;
     border-radius: 20px;
     overflow: hidden;
+    padding-top: 24px;
 }
 
 .project__description{
     position: absolute;
     color: black;
     max-width: 100%;
-    
+    opacity: 0;
 }
+
+.project__wrapper:hover .project__description{
+    opacity: 1;
+    transition: all 400ms ease;
+}
+
+.project__wrapper:hover .project__img{
+    filter: blur(20px);
+    transition: all 400ms ease;
+}
+
