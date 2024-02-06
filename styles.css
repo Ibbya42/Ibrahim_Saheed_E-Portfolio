@@ -370,9 +370,10 @@ li{
 
 .project__wrapper:hover .project__title,
 .project__wrapper:hover .project__languages,
-.project__wrapper:hover .project_desc--paragraph {
+.project__wrapper:hover .project_desc--paragraph,
+.project__wrapper:hover .links__icon--black {
     opacity: 1;
-    transition-delay: 0.7s;
+    transition-delay: 0.6s;
     transition-timing-function: linear;
 
 }
@@ -407,3 +408,55 @@ li{
     text-wrap: wrap;
 }
 
+.links__icon--black{
+    color: black;
+    opacity: 0;
+    padding-top: 16px;
+    font-size: 24px;
+    padding-left: 12px;
+}
+
+/* CSS For Contact Me Page */
+
+#ContactMe{
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/test6.jpg);
+    background-size: cover;
+    padding: 80px 0px;
+}
+
+.form__firstrow,
+.form__secondrow,
+.form__thirdrow{
+    color: white;
+    font-size: 24px;
+}
+
+
+.form__firstrow{
+    display: flex;
+    padding-top: 16px;
+}
+
+.firstrow__text{
+    margin: 0 2px;
+}
+
+.form__secondrow{
+    padding-top: 8px;
+}
+
+.form__wrapper input[type = "text"] ,
+.form__wrapper input[type = "email"]{
+    width: 100%;
+    padding: 16px;
+}
+
+.form__wrapper textarea{
+    padding: 56px;
+    width: 100%;
+    box-sizing: border-box;
+    
+   
+}
