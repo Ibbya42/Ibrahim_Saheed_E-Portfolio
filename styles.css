@@ -418,7 +418,7 @@ li{
 
 /* CSS For Contact Me Page */
 
-#ContactMe{
+/* #ContactMe{
     display: flex;
     flex-direction: column;
     background-image: url(assets/test6.jpg);
@@ -444,19 +444,35 @@ li{
 }
 
 .form__secondrow{
-    padding-top: 8px;
+    padding-top: 16px;
 }
 
-.form__wrapper input[type = "text"] ,
+.form__wrapper .firstrow__text,
+.form__wrapper .secondrow__text,
 .form__wrapper input[type = "email"]{
     width: 100%;
     padding: 16px;
 }
 
-.form__wrapper textarea{
+ .textarea__text{
     padding: 56px;
     width: 100%;
-    box-sizing: border-box;
-    
-   
+    padding: 5px 0px 200px 10px;
 }
+
+.submitbtn__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit__btn{
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.submit__btn:hover{
+    color: red;
+} */
