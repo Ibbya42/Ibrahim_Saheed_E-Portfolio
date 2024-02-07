@@ -185,6 +185,7 @@ li{
 .links__icon{
     padding: 40px 24px;
     font-size: 24px;
+    animation: landing__rightsection-text 4000ms ease;
 }
 
 .scroll{
