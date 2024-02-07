@@ -13,6 +13,11 @@ HTML{
     overflow-x: hidden;
 }
 
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .row{
     width: 100%;
     max-width: 1200px;
@@ -42,8 +47,8 @@ li{
 /* CSS FOR Navigation Bar */
 
 #navigation__bar{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    /* height: 100vh; */
     /* background-image: url(assets/test2.jpg); */
     background-image: url(assets/test6.jpg);
     background-size: cover;
@@ -180,6 +185,10 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.links__icon:hover{
+    color: red;
 }
 
 .links__icon{
@@ -490,11 +499,6 @@ footer{
     margin-bottom: 20px;
 }
 
-.footer_logo--img{
-    width: 0px;
-    height: 70px;
-}
-
 .footer_social--list{
     
     width: 100%;
@@ -513,13 +517,134 @@ footer{
 }
 
 .footer_social--link{
-    /* Design for the footer-links */
+    
     color: black;
     text-decoration: none;
+    padding-top: 16px;
+
 }
-
-
 
 .heading__footer{
     color: black;
+}
+
+.link__hover--effect:hover{
+    color: red;
+}
+.footer__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 468px) {
+
+   #navigation__bar{
+    background-image: cover;
+    overflow-x: hidden;
+   }
+
+    .Nav__logo--heading{
+        font-size: 24px;
+    }
+
+    .landing__pagepicture--ibby{
+        width: 150px
+    }
+
+    .nav__link--edit{
+        display: none;
+    }
+
+    .landingpage__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0;
+        
+    }
+
+    .title{
+        font-size: 48px;
+    }
+
+    .landing__subheading{
+        font-size: 32px;
+    }
+
+    .landing__para{
+        font-size: 16px;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .stack__title,
+    .project__header{
+        font-size: 32px;
+    }
+
+    .Stack__subheading,
+    .project__subheader{
+        font-size: 24px;
+    }
+
+    .technology__Stack{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stack__left--img{
+        display: none;
+    }
+
+    .stack__both--wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stack__list{
+        width: calc(100%/2);
+    }
+
+    .stack__description{
+        font-size: 16px;
+    }
+
+
+    .project__list{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project__title{
+        font-size:16px;
+    }
+
+    .project__languages{
+        font-size: 16px;
+    }
+
+    .project_desc--paragraph{
+        display: none;
+    }
+    
+    .links__icon--black{
+        font-size: 16px;
+    }
+
+
+
+
+    
+    
+    
+    
+
+
 }
