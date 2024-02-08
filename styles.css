@@ -271,7 +271,33 @@ li{
 
 .btn__menu--close{
     position: absolute;
+    margin-top: 16px;
+    right: 10px;
+    font-size: 20px ;
+    color: white;
+    background-color: transparent;
+    border: none;
     
+}
+
+.burgermenu__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.option__list:hover .burger_link{
+    color: red;
+}
+
+.burger_link{
+    font-size: 64px;
+}
+
+.option__list{
+    padding: 24px 0;
 }
 
 /* CSS For Tech Stack */
