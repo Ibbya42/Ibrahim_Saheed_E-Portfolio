@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Calling FontAwesome script to add Icons -->
     <script src="https://kit.fontawesome.com/88b65648e5.js" crossorigin="anonymous"></script>
+    <!-- Calling the Javascript Class -->
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -37,6 +39,31 @@
                         <a href="mailto:ibrahimsaheed831@gmail.com" class=" nav__link--edit navlink__hover--effect">Contact Me</a>
                     </li>
                 </ul>
+                <button class="burger__dropbutton" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="burgermenu__background">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="burgermenu__links">
+                        <li class="option__list">
+                            <a href="#technology__Stack" class="burger_link" onclick="closeMenu()">Technlogy Stack</a>
+                        </li>
+                        <li class="option__lis">
+                            <a href="#Projects" class="burger_link" onclick="closeMenu()">Project</a>
+                        </li>
+                        <li class="option__list">
+                            <a href="/assets/Ibrahim_CV_2023.pdf" target="_blank" class="burger_link" onclick="closeMenu()">Resume</a>
+                        </li>
+                        <li class="option__list">
+                            <a href="mailto:ibrahimsaheed831@gmail.com" class="burger_link" onclick="closeMenu()">Contact Me</a>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+
             </div>
             <div class="landingpage__wrapper">
                 <div class="landing__leftsection">

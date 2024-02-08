@@ -232,6 +232,48 @@ li{
     }
 }
 
+
+/* Burger Menu */
+
+.burger__dropbutton{
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    display: none;
+    
+}
+
+.burgermenu__background{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden ;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in;
+}
+
+.open--burgermenu .burgermenu__background{
+    visibility: visible;
+    opacity: 1;
+}
+
+.open--burgermenu{
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.btn__menu--close{
+    position: absolute;
+    
+}
+
 /* CSS For Tech Stack */
 
 #technology__Stack{
@@ -521,6 +563,7 @@ footer{
     color: black;
     text-decoration: none;
     padding-top: 16px;
+    font-weight: 700;
 
 }
 
@@ -538,7 +581,7 @@ footer{
     align-items: center;
 }
 
-@media (max-width: 468px) {
+@media (max-width: 600px) {
 
    #navigation__bar{
     background-image: cover;
@@ -596,7 +639,9 @@ footer{
     }
 
     .stack__left--img{
-        display: none;
+        /* display: none; */
+        padding-top: 12px;
+        width: 100%
     }
 
     .stack__both--wrapper{
@@ -638,13 +683,102 @@ footer{
         font-size: 16px;
     }
 
+    .project{
+        padding: 24px 24px;
+    }
+
+    .burger__dropbutton{
+        display: block;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+
+    .Nav__logo--heading{
+        font-size: 32px;
+    }
+
+    .nav__link--edit{
+       font-size: 16px;
+    }
 
 
+    .landingpage__wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 16px 0;
+    }
 
+    .landing__pagepicture--ibby{
+        width: 200px
+    }
+
+    .title{
+        font-size: 48px;
+    }
+
+    .landing__subheading{
+        font-size: 32px;
+    }
+
+    .landing__para{
+        font-size: 16px;
+    }
+
+    .scroll{
+        display: none;
+    }
+
+    .stack__title,
+    .project__header{
+        font-size: 32px;
+    }
+
+    .Stack__subheading,
+    .project__subheader{
+        font-size: 24px;
+    }
+
+    .stack__both--wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stack__left--img{
+        /* display: none; */
+        padding-top: 12px;
+        width: 100%
+    }
+
+    .project__list{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project{
+        padding: 24px 24px;
+    }
+
+    .project__title{
+        font-size:16px;
+    }
+
+    .project__languages{
+        font-size: 16px;
+    }
+
+    .project_desc--paragraph{
+        font-size: 16px;
+    }
     
-    
-    
-    
+    .links__icon--black{
+        font-size: 16px;
+    }
 
 
 }
